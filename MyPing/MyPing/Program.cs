@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MyPing
 {
@@ -10,6 +6,15 @@ namespace MyPing
     {
         static void Main(string[] args)
         {
+            // структура вывода консольных програм
+
+            // header 
+            Console.Write("- MyPing - ");
+            
+            // body programm
+
+            // footer
+            Console.Write("- end! - ");
         }
     }
 }
