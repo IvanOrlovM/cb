@@ -1,10 +1,10 @@
 ﻿+ Используя Visual Studio, создайте проект по шаблону Console Application.
-- Создайте класс  AbstractHandler
++ Создайте класс  AbstractHandler
 	В теле класса создать методы:
-	- void Open()
-	- void Create()
-	- void Chenge()
-	- void Save()
+	+ void Open()
+	+ void Create()
+	+ void Chenge()
+	+ void Save()
 Создать  производные  классы от  базового  класса AbstractHandler:
 	- XMLHandler 
 	- TXTHandler 
