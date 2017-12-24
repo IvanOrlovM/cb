@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileDefinition", "FileDefinition\FileDefinition.csproj", "{AE908154-E6D5-44B4-9C66-D6F3B6AF9DFE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{005887EF-31B9-4EF3-8E68-F0FE1DC59721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileDifinitionTest", "UnitTest\FileDifinitionTest\FileDifinitionTest.csproj", "{F70C2305-B052-43E8-9730-EE2F650DAC26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{AE908154-E6D5-44B4-9C66-D6F3B6AF9DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE908154-E6D5-44B4-9C66-D6F3B6AF9DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE908154-E6D5-44B4-9C66-D6F3B6AF9DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F70C2305-B052-43E8-9730-EE2F650DAC26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F70C2305-B052-43E8-9730-EE2F650DAC26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F70C2305-B052-43E8-9730-EE2F650DAC26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F70C2305-B052-43E8-9730-EE2F650DAC26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F70C2305-B052-43E8-9730-EE2F650DAC26} = {005887EF-31B9-4EF3-8E68-F0FE1DC59721}
 	EndGlobalSection
 EndGlobal

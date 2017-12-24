@@ -3,12 +3,12 @@
 	В теле класса создать методы:
 	+ void Open()
 	+ void Create()
-	+ void Chenge()
+	+ void Change()
 	+ void Save()
 Создать  производные  классы от  базового  класса AbstractHandler:
-	- XMLHandler 
-	- TXTHandler 
-	- DOCHandler  
+	+ XMLHandler 
+	+ TXTHandler 
+	+ DOCHandler  
 Написать программу, которая будет выполнять:
 - определение документа и для каждого формата должны
 быть методы открытия, создания, редактирования, сохранения определенного формата документа.

@@ -1,6 +1,6 @@
 ﻿namespace FileDefinition
 {
-    internal class XmlHandler : AbstractHandler
+    public class XmlHandler : AbstractHandler
     {
     }
 }
