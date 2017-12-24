@@ -50,8 +50,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TxthandlerTest.cs" />
+    <Compile Include="DocHandlerTest.cs" />
+    <Compile Include="TxtHandlerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FileDefinition\FileDefinition.csproj">
+      <Project>{AE908154-E6D5-44B4-9C66-D6F3B6AF9DFE}</Project>
+      <Name>FileDefinition</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
