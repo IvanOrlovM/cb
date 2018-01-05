@@ -4,6 +4,7 @@
     {
         public DocHandler(string path) : base(path)
         {
+
         }
     }
 }
