@@ -1,4 +1,4 @@
-﻿- Используя Visual Studio, создайте проект по шаблону Console Application "TrainManager"
+﻿+ Используя Visual Studio, создайте проект по шаблону Console Application "TrainManager"
 	Требуется:
 		- Описать структуру с именем Train
 			содержащую следующие поля: 
