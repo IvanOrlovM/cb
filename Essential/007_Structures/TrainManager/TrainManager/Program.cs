@@ -1,61 +1,31 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Runtime.InteropServices;
+using System.Globalization;
 
 namespace TrainManager
 {
-    public struct Train
-    {
-        private string Destination;
-        public int Number;
-        private DateTime Time;
-
-        public Train(string destination, int number, DateTime time)
-        {
-            Destination = destination;
-            Number = number;
-            Time = time;
-        }
-
-        //i dont now what about this answer
-    }
-    /*
-- Написать программу, выполняющую следующие действия:
-	- ввод с клавиатуры данных в массив, состоящий из восьми элементов типа Train
-	- выполнить сортировку (записи должны быть упорядочены по номерам поездов);
-	- вывод на экран информации о поезде, 
-		- реализовать доступ по номеру (номер которого введен с клавиатуры)
-		- выводить нотификацию, если таких поездов нет.
-     создать    
-     */                                                                                                                                         
     class Program
     {
-        private static Item item;
-
         static void Main(string[] args)
         {
-            var trains = new Train[8];
-            for (var i = 0; i < trains.Length; i++)
-            {
-                trains[i] = new Train();
-            }
-            // пользовательский ввод
-            var train = new Train();
-            var number = Console.ReadLine();
-            train.Number = int.Parse(number);
+            Train train0 = UserInputTrain();
 
             Console.ReadKey();
-            // инициализация Train
-            train = new Train();
-            // инициашизация Item
-            item = new Item();
-
-           
-           
         }
-    }
 
-    internal class Item
-    {
+        private static Train UserInputTrain()
+        {
+            Console.Write("Введите пункт назначения: ");
+            string destination = Console.ReadLine();
+
+            Console.Write("Введите номер поезда: ");
+            string trainNumber = Console.ReadLine();
+            int number = int.Parse(trainNumber);
+
+            Console.Write("Введите время отправления (В формате HH:mm): ");
+            string beginTime = Console.ReadLine();
+            DateTime time = DateTime.ParseExact(beginTime, "HH:mm", CultureInfo.CurrentCulture);
+            var train = new Train(destination, number, time);
+            return train;
+        }
     }
 }
