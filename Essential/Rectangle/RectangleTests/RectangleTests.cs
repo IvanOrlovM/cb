@@ -26,5 +26,17 @@ namespace RectangleTests
             double expected = _target.PerimeterCalculator();
             Assert.AreEqual(expected, 10);
         }
+
+        [TestMethod]
+        public void AreaTest()
+        {
+            Assert.AreEqual(_target.Area, 6);
+        }
+
+        [TestMethod]
+        public void PerimeterTest()
+        {
+            Assert.AreEqual(_target.Perimeter, 10);
+        }
     }
 }

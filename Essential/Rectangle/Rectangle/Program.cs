@@ -17,6 +17,7 @@ namespace Rectangle
                 var height = GetSide("Enter height: ");
 
                 var rectangle = new Rectangle(width, height);
+                var rectangleArea = rectangle.Area;
 
                 var showRectangle = new ShowRectangle(rectangle);
 
