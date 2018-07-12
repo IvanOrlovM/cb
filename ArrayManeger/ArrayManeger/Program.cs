@@ -3,8 +3,14 @@ using System.Linq;
 
 namespace ArrayManeger
 {
+    /// <summary>
+    /// Program class
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// The main method
+        /// </summary>
         static void Main()
         {
             do

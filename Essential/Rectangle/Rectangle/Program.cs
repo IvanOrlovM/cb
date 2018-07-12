@@ -60,7 +60,7 @@ namespace Rectangle
                 Console.Write("\t\t");
                 for (int j = 0; j < Figure.Width; j++)
                 {
-                    Console.Write("+");
+                    Console.Write("*");
                 }
 
                 Console.WriteLine();
