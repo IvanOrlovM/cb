@@ -5,17 +5,11 @@ namespace AddressApplication
 {
     public class Address
     {
-        public static int index
-        { get; set; }
-        public static string country
-        { get; set; }
-        public static string city
-        { get; set; }
-        public static string street
-        { get; set; }
-        public static int house
-        { get; set; }
-        public static int apartment
-        { get; set; }
+        public int index { get; set; }
+        public string country { get; set; }
+        public string city { get; set; }
+        public string street { get; set; }
+        public int house { get; set; }
+        public int apartment { get; set; }
     }
 }
