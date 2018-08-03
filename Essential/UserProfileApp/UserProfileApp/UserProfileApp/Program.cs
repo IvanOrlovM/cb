@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace UserProfileApp
 {
@@ -10,6 +6,16 @@ namespace UserProfileApp
     {
         static void Main(string[] args)
         {
+            var user = new User
+            {
+                Login = "QWERTY",
+                Name = "Vasya",
+                SName = "Pumpkin",
+                Age = 33,
+            };
+            Console.WriteLine(user);
+
+            Console.ReadKey();
         }
     }
 }
