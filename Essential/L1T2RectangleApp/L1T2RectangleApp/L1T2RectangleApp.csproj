@@ -38,6 +38,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rectangle.cs" />
     <Content Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>

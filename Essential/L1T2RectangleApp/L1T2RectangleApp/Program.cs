@@ -4,6 +4,9 @@
     {
         static void Main(string[] args)
         {
+            var rectangle = new Rectangle(10, 20);
+            double area = rectangle.Area();
+            double perimeter = rectangle.Perimeter();
         }
     }
 }
