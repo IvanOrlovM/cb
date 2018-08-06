@@ -1,4 +1,6 @@
-﻿namespace L1T3LibraryApp
+﻿using System;
+
+namespace L1T3LibraryApp
 {
     class Program
     {
@@ -15,6 +17,8 @@
             book.AddContent(content);
 
             book.Show();
+
+            Console.ReadKey();
         }
     }
 }

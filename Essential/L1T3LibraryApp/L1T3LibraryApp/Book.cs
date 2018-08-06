@@ -1,4 +1,6 @@
-﻿namespace L1T3LibraryApp
+﻿using System;
+
+namespace L1T3LibraryApp
 {
     public class Book
     {
@@ -24,7 +26,9 @@
         public void Show()
         {
             _title.Show();
+            Console.ForegroundColor = ConsoleColor.Green;
             _author.Show();
+            Console.ForegroundColor = ConsoleColor.Red;
             _content.Show();
         }
     }
