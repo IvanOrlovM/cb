@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L1T4FiguresApp", "L1T4FiguresApp\L1T4FiguresApp.csproj", "{BD233000-6079-4725-8558-634BAC42078B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L1T4FigureAppTest", "L1T4FigureAppTest\L1T4FigureAppTest.csproj", "{BD87C20B-EA87-4105-93BA-057002F7E982}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD233000-6079-4725-8558-634BAC42078B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD233000-6079-4725-8558-634BAC42078B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD233000-6079-4725-8558-634BAC42078B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD233000-6079-4725-8558-634BAC42078B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD87C20B-EA87-4105-93BA-057002F7E982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD87C20B-EA87-4105-93BA-057002F7E982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD87C20B-EA87-4105-93BA-057002F7E982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD87C20B-EA87-4105-93BA-057002F7E982}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
