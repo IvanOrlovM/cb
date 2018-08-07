@@ -2,8 +2,8 @@
 {
     public class Rectangle
     {
-        private double _side1;
-        private double _side2;
+        private readonly double _side1;
+        private readonly double _side2;
 
         public Rectangle(double side1, double side2)
         {
@@ -11,14 +11,26 @@
             _side2 = side2;
         }
 
-        public double Area()
+        public double PerimeterCalc()
+        {
+            return (_side1 + _side2) * 2;
+        }
+
+        public double Perimeter
+        {
+            get { return PerimeterCalc(); }
+        }
+
+        public double AreaCalc()
         {
             return _side1 * _side2;
         }
-
-        public double Perimeter()
+        public double Area
         {
-            return (_side1 + _side2) * 2;
+            get
+            {
+                return AreaCalc();
+            }
         }
     }
 }
