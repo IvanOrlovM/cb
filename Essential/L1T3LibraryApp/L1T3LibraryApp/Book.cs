@@ -26,8 +26,10 @@ namespace L1T3LibraryApp
         public void Show()
         {
             _title.Show();
+            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Green;
             _author.Show();
+            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Red;
             _content.Show();
         }

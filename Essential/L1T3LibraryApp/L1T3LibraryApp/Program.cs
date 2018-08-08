@@ -7,13 +7,13 @@ namespace L1T3LibraryApp
         static void Main(string[] args)
         {
             var book = new Book();
-            Title title = new Title("The Great Gatsby ");
+            Title title = new Title("The Great Gatsby");
             book.AddTitle(title);
 
-            Author author = new Author("by F. Scott Fitzgerald ");
+            Author author = new Author("by F. Scott Fitzgerald");
             book.AddAuthor(author);
 
-            Content content = new Content("\n CONTENT... ");
+            Content content = new Content("CONTENT...");
             book.AddContent(content);
 
             book.Show();
