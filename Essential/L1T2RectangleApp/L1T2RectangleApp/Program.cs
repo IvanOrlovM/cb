@@ -1,31 +1,36 @@
 ﻿using System;
-using static System.Convert;
 
 namespace L1T2RectangleApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Height: ");
+            var height = ReadLineToDouble("Height: ");
+            var width = ReadLineToDouble("Width: ");
 
-            var side1 = ToDouble
-                (Console.ReadLine());
+            var rectangle = new Rectangle(height, width);
 
-            Console.WriteLine("width: ");
-
-            var side2 = ToDouble
-                (Console.ReadLine());
-
-            var rectangle = new Rectangle(side1, side2);
-           // double area = rectangle.AreaCalc();
-           // double perimeter = rectangle.PerimeterCalc();
-
-            Console.WriteLine("Perimeter = {0}, Area= {1}", rectangle.Perimeter, rectangle.Area);
+            Console.WriteLine($"Perimeter = {rectangle.Perimeter}, Area= {rectangle.Area}");
 
             Console.WriteLine("To exit - press any key");
 
             Console.ReadKey();
+        }
+
+        private static double ReadLineToDouble(string s)
+        {
+            Console.Write(s);
+            var inputWidht = Console.ReadLine();
+
+            double value;
+            while (!double.TryParse(inputWidht, out value))
+            {
+                Console.WriteLine("Value is not a number in a valid format.");
+                inputWidht = Console.ReadLine();
+            }
+
+            return value;
         }
     }
 }

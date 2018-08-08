@@ -11,26 +11,18 @@
             _side2 = side2;
         }
 
+        public double Area => AreaCalc();
+
+        public double Perimeter => PerimeterCalc();
+
         public double PerimeterCalc()
         {
             return (_side1 + _side2) * 2;
         }
 
-        public double Perimeter
-        {
-            get { return PerimeterCalc(); }
-        }
-
         public double AreaCalc()
         {
             return _side1 * _side2;
-        }
-        public double Area
-        {
-            get
-            {
-                return AreaCalc();
-            }
         }
     }
 }
