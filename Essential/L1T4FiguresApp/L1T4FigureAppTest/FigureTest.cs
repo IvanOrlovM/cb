@@ -1,5 +1,4 @@
-﻿using System;
-using L1T4FiguresApp;
+﻿using L1T4FiguresApp;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace L1T4FigureAppTest
@@ -24,6 +23,13 @@ namespace L1T4FigureAppTest
         {
             var actual = _target.LenghtSide(new Point("A", 3, -4), new Point("B", -6, 5));
             Assert.AreEqual(8.0, actual);
+        }
+
+        [TestMethod]
+        public void Test()
+        {
+            var actual = _target.PerimeterCalculator();
+            Assert.AreEqual(2.0, actual);
         }
     }
 }

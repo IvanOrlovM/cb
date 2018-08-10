@@ -2,30 +2,17 @@
 {
     public class Point
     {
-        private string _name;
-
-        public string Name
-        {
-            get { return _name; }
-        }
-
-        private int _y;
-        public int x
-        {
-            get { return _x; }
-        }
-        private int _x;
-
-        public int y
-        {
-            get { return _y; }
-        }
-
         public Point(string name, int y, int x)
         {
-            _name = name;
-            _y = y;
-            _x = x;
+            Name = name;
+            Y = y;
+            X = x;
         }
+
+        public string Name { get; }
+
+        public int X { get; }
+
+        public int Y { get; }
     }
 }
