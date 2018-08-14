@@ -2,11 +2,11 @@
 
 namespace L3T0PrintApp
 {
-    public class MyPrinterYellow : Printer
+    public class MyPrinter : Printer
     {
         public void MyPrint(string value)
         {
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.ForegroundColor = ConsoleColor.Gray; //Grey = default color
             Print(value);
         }
     }

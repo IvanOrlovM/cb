@@ -7,13 +7,16 @@ namespace L3T0PrintApp
         static void Main()
         {
             var printerGreen = new MyPrinterGreen();
-            var printerYellow = new MyPrinterYellow();
+            var printer = new MyPrinter();
             var printerRed = new MyPrinterRed();
             for (int i = 0; i < 10; i++)
             {
                 printerGreen.MyPrint(i + "Green");
+                Console.WriteLine("+++");
                 printerRed.MyPrint(i + "Red");
-                printerYellow.MyPrint(i + "Yellow");
+                Console.WriteLine("+++");
+                printer.MyPrint(i + "default");
+                Console.WriteLine("+++");
             }
             Console.ReadKey();
         }
