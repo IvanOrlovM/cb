@@ -14,13 +14,22 @@
         public decimal GetSallary()
         {
             decimal rate = 2000;
+            var surchargePercent = 0.2;
+            var taxChargePercent = (decimal)0.8;
+
+            var years = GetYears();
+
             // надбавка за стаж
-            int years = 2;
-            decimal surcharge = rate * (decimal) 0.2*years;
+            decimal surcharge = rate * (decimal) surchargePercent*years;
             decimal sallary = rate + surcharge;
             // налоговый сбор
-            decimal d = sallary * (decimal) 0.8;
-            return d;
+            return sallary * taxChargePercent;
+        }
+
+        private static int GetYears()
+        {
+            int years = 2;
+            return years;
         }
     }
 }
