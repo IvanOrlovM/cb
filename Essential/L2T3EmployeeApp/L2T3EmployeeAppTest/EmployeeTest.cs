@@ -20,7 +20,8 @@ namespace L2T3EmployeeAppTest
         [TestMethod]
         public void Test()
         {
-
+            var actual = _target.GetSallary();
+            Assert.AreEqual(2240, actual);
         }
     }
 }
