@@ -12,16 +12,21 @@ namespace L2T3EmployeeAppTest
         [TestInitialize]
         public void Init()
         {
-            var firstName = "";
-            var lastName = "";
-            _target = new Employee(firstName, lastName);
+            _target = new Employee("Ivan", "Orlov", Positions.TechLiad);
         }
 
         [TestMethod]
-        public void Test()
+        public void GetSallaryTest()
         {
             var actual = _target.GetSallary();
             Assert.AreEqual(2240, actual);
         }
+
+        [TestMethod]
+        public void ToStringTest()
+        {
+            var actual = _target.ToString();
+            Assert.AreEqual(actual = "_firstName: Ivan, _lastName: Orlov, _position: TechLiad", actual);
+        }   
     }
 }

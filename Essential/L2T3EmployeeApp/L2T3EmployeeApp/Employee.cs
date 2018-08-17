@@ -4,11 +4,13 @@
     {
         private string _firstName;
         private string _lastName;
+        private Positions _position;
 
-        public Employee(string firstName, string lastName)
+        public Employee(string firstName, string lastName, Positions position)
         {
             _firstName = firstName;
             _lastName = lastName;
+            _position = position;
         }
 
         public decimal GetSallary()
@@ -30,6 +32,11 @@
         {
             int years = 2;
             return years;
+        }
+
+        public override string ToString()
+        {
+            return $"{nameof(_firstName)}: {_firstName}, {nameof(_lastName)}: {_lastName}, {nameof(_position)}: {_position}";
         }
     }
 }
