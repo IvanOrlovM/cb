@@ -36,6 +36,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accountant.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Positions.cs" />
     <Compile Include="Program.cs" />
