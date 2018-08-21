@@ -4,19 +4,13 @@ namespace MultiplicationTableApp
 {
     class Program
     {
-        public int a = 2;
-        public int b = 2;
-
         static void Main(string[] args)
         {
-            void Method()
+            for (int i = 2, a = 2; i < 10; i++)
             {
-                int Sum(int a, int b)
-                {
-                    return a * b;
-                }
-                Console.WriteLine();
+                Console.WriteLine($"{a}*{i}={a*i}");
             }
+
             Console.ReadLine();
         }
     }
