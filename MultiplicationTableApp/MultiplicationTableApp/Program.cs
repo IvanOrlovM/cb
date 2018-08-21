@@ -4,18 +4,20 @@ namespace MultiplicationTableApp
 {
     class Program
     {
+        public int a = 2;
+        public int b = 2;
+
         static void Main(string[] args)
         {
-            Console.WriteLine("2*2=4");
-            Console.WriteLine("2*3=6");
-            Console.WriteLine("2*4=8");
-            Console.WriteLine("2*5=10");
-            Console.WriteLine("2*6=12");
-            Console.WriteLine("2*7=14");
-            Console.WriteLine("2*8=16");
-            Console.WriteLine("2*9=18");
+            void Method()
+            {
+                int Sum(int a, int b)
+                {
+                    return a * b;
+                }
+                Console.WriteLine();
+            }
             Console.ReadLine();
-
         }
     }
 }
