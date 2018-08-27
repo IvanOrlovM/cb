@@ -6,13 +6,18 @@ namespace ArraysApp
     {
         static void Main(string[] args)
         {
-            MultiDimensional();
+            Console.WriteLine(" -= 10x10 =-");
+
+            int[][] array = MultiDimensional();
+            PrintArray(array);
+
+            Console.WriteLine("\n -= 1x10 =-");
             SingleDimensional();
 
             Console.ReadKey();
         }
 
-        private static void MultiDimensional()
+        private static int[][] MultiDimensional()
         {
             int[][] array = new int[10][];
             for (int i = 0; i < array.Length; i++)
@@ -23,7 +28,8 @@ namespace ArraysApp
                     array[i][j] = int.Parse($"{i}{j}");
                 }
             }
-            PrintArray(array);
+
+            return array;
         }
 
         public static void PrintArray(int[][] array)
@@ -32,6 +38,11 @@ namespace ArraysApp
             {
                 for (int j = 0; j < array[i].Length; j++)
                 {
+                    if (array[i][j] >= 0 && array[i][j] <= 9)
+                    {
+                        Console.Write("0");
+                    }
+
                     Console.Write(array[i][j] + " ");
                 }
                 Console.WriteLine();
