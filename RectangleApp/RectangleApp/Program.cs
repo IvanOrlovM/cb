@@ -6,20 +6,13 @@ namespace RectangleApp
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter Height: ");
-            string height = Console.ReadLine();
+            int height = GetConsoleInputLine("Enter Height: ");
+            int width = GetConsoleInputLine("Enter Width: ");
 
-            int.TryParse(height, out var value);
-
-            Console.Write("Enter Width: ");
-            string width = Console.ReadLine();
-
-            int.TryParse(width, out var value1);
-
-            Console.Clear();
-            for (int i = 0; i < value; i++)
+            //Console.Clear();
+            for (int i = 0; i < height; i++)
             {
-                for (int j = 0; j < value1; j++)
+                for (int j = 0; j < width; j++)
                 {
                     Console.Write("*");
                 }
@@ -29,6 +22,21 @@ namespace RectangleApp
 
             Console.ReadKey();
 
+        }
+
+        public static int GetConsoleInputLine(string notification)
+        {
+            Console.Write(notification);
+            string widthStr = Console.ReadLine();
+
+            int result;
+            while (!int.TryParse(widthStr, out result))
+            {
+                Console.WriteLine("You entered an incorrect value!");
+                widthStr = Console.ReadLine();
+            }
+
+            return result;
         }
     }
 }
