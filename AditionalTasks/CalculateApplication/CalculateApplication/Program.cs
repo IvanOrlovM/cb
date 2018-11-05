@@ -8,12 +8,12 @@ namespace CalculateApplication
         {
             Console.Write("Enter a: ");
             string a = Console.ReadLine();
-            int num1 = int.Parse(a);
-            Console.Write("Enter b: ");
-            string b = Console.ReadLine();
-            int num2 = int.Parse(b);
-            Console.Clear();
-            Console.WriteLine($"{num1} * {num2} = {num1 * num2}");
+            int sum = int.Parse(a);
+
+            for (int i = 2; i < 10; i++)
+            {
+                Console.WriteLine($"{sum} * {i} = {sum * i}");
+            }
             Console.ReadLine();
         }
     }
