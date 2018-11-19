@@ -6,13 +6,15 @@ namespace CalculateApplication
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter a: ");
-            string a = Console.ReadLine();
-            int sum = int.Parse(a);
-
+            Console.WriteLine("***************");
             for (int i = 2; i < 10; i++)
             {
-                Console.WriteLine($"{sum} * {i} = {sum * i}");
+                for (int j = 2; j < 10; j++)
+                {
+                    int a = j * i;
+                    Console.WriteLine($"* {i} * {j} = {a} {(a < 10 ? " " : "")} *");
+                }
+                Console.WriteLine("***************");
             }
             Console.ReadLine();
         }
