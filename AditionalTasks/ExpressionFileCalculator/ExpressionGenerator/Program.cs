@@ -20,6 +20,7 @@ namespace ExpressionGenerator
             }
             
             File.AppendAllLines("File.exp", contents);
+        Console.ReadLine();
         }
     }
 }
